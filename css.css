@@ -1,0 +1,39 @@
+
+
+@keyframes example {
+  from {background-color: lightseagreen;}
+  to {background-color: #99ffcc;}
+}
+
+/* The element to apply the animation to */
+.read {
+  width: 70%;
+  height: 200px;
+  background-color: lightseagreen;
+  animation-name: example;
+  animation-duration: 3s;
+animation-iteration-count: infinite;
+ text-align: center;
+position: absolute;
+top:200px;
+right:50px;
+font-size: 20px;
+    font-style: oblique;
+}
+
+.form{
+   font-size: 30px;
+    font-style: oblique;
+background-color: #00cccc;
+ border-radius: 5px ;
+ text-indent: 50px;
+height: 70px;
+text-align:center;
+}
+.but{
+   font-size: 20px;
+    font-style: oblique;
+background-color: #00cccc;
+ border-radius: 3px ;
+text-align:center;
+}
