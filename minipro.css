@@ -1,0 +1,62 @@
+.container{
+    text-align: center;
+    padding: 20px;
+}
+
+.three{
+  border-radius: 5px ;
+   background:lightseagreen;
+padding-left: 20px;
+    padding-right: 20px;
+   padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-style: oblique;
+text-align:right;
+}
+
+.bg{
+background-repeat:no-repeat;
+background-image:url(https://i.pinimg.com/736x/72/19/49/72194920c0ebf958130a27b9d738db2d--book-photography-turquoise-color.jpg);
+background-size: 90% auto;
+}
+
+
+.bg1{
+background-repeat:no-repeat;
+background-image:url(https://i.etsystatic.com/8195188/r/il/5d3acb/3339717553/il_fullxfull.3339717553_t39a.jpg);
+background-size: 90% auto;
+}
+
+
+.addbk {
+   font-size: 30px;
+    font-style: oblique;
+background-color: #00cccc;
+ border-radius: 5px ;
+ text-indent: 50px;
+height: 70px;
+text-align:center;
+}
+.bgaddbk{
+background-image:url(https://images.unsplash.com/photo-1546521343-4eb2c01aa44b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Ym9va3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+background-repeat:no-repeat;
+background-size: 45% auto;
+}
+
+.des{
+ font-size: 20px;
+    font-style: oblique;
+background-color: #009999;
+ border-radius: 5px ;
+
+}
+.para{
+font-size: 20px;
+    font-style: oblique;
+}
+
+.img{
+    float:right;
+width: 300px;
+   }
