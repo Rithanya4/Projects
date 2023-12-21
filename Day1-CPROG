@@ -1,0 +1,73 @@
+1.  Given two numbers, Swap those two numbers without using temporary variable
+#include <stdio.h>
+int main() {
+  int a, b;
+  printf("Enter a: ");
+  scanf("%d", &a);
+  printf("Enter b: ");
+  scanf("%d", &b);
+
+  a = a - b;   
+
+  b = a + b;
+
+  a = b - a;
+
+  printf("After swapping, a = %d\n", a);
+  printf("After swapping, b = %d", b);
+
+  return 0;
+}
+
+2. Calculate the number of years,weeks and the remaining days for the given total days
+#include <stdio.h>
+int main() {
+   int days, years, weeks;
+
+   printf("Enter number of days:");
+   scanf("%d",&days);
+
+    // Converts days to years, weeks and days
+    years = days/365; // Calculate years
+    weeks = (days % 365)/7; // Calculate weeks
+    days = days - ((years*365) + (weeks*7)); // Calculate remaining  
+    
+    printf("Years: %d\n", years);
+    printf("Weeks: %d\n", weeks);
+    printf("Days: %d \n", days);
+
+  return 0;
+}
+
+3.Evaluate a polynomial of degree n.
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    double x, result = 0;
+
+    // Input: Enter the degree of the polynomial
+    printf("Enter the degree of the polynomial: ");
+    scanf("%d", &n);
+
+    // Input: Enter the coefficients
+    double coefficients[n + 1];
+    printf("Enter the coefficients: ");
+    for (i = 0; i <= n; i++) {
+        scanf("%lf", &coefficients[i]);
+    }
+
+    // Input: Enter the value of x
+    printf("Enter the value of x: ");
+    scanf("%lf", &x);
+
+    // Evaluate the polynomial using Horner's method
+    for (i = n; i >= 0; i--) {
+        result = result * x + coefficients[i];
+    }
+
+    // Output: P(x)
+    printf("P(%lf) = %lf\n", x, result);
+
+    return 0;
+}
