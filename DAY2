@@ -1,0 +1,50 @@
+1.Calculate the area of square or circle based on the shape ‘S’ for Square and ‘C’ for Circle.
+
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+   char shape;
+   float size,result;
+   scanf("%c",&shape);
+   scanf("%f",&size);
+   if(shape=='C'){
+       result=3.14*size*size;
+       printf("%.2f",result);
+   }
+   if(shape=='S'){
+       result=size*size;
+       printf("%.2f",result);
+   }
+}
+
+
+2. Given a sorted array having duplicate elements. Print the elements with its frequency having more than one appearance.
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        int[] arr=new int[]{1,1,1,2,4,4,4,4,5,6,9,9,9};
+       int i=0,j=i+1;
+      
+        for(i=0;i<arr.length;i++){
+             int count=1;
+            for(j=i+1;j<arr.length;j++){
+                
+                if(arr[i]==arr[j]){
+                    count++;
+                }
+              else{
+                  break;
+              }
+            }
+              if(count>1){
+                   System.out.println(arr[i]+"-->"+count);
+               i=j;
+            }
+           
+        }
+    }
+}
