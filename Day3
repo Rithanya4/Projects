@@ -1,0 +1,63 @@
+1.Anagram:
+import java.util.Arrays;
+class HelloWorld {
+    public static void main(String[] args) {
+      
+       String str1="anagraam";
+       String str2="nagaram";
+       
+       if(str1.length()==str2.length()){
+       char[] arr1=str1.toCharArray();
+       char[] arr2=str2.toCharArray();
+       
+       Arrays.sort(arr1);
+       Arrays.sort(arr2);
+       
+     boolean res=  Arrays.equals(arr1,arr2);
+     if(res){
+         System.out.println("Anagram");
+     }
+     else{
+         System.out.println("Not an Anagram");
+     }
+       }
+        else{
+         System.out.println("Not a Anagram");
+     }
+    }
+}
+
+2.Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
+
+import java.util.Arrays;
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        String[] a={"flower","flow","flight"};
+     int size = a.length;
+ 
+        /* if size is 0, return empty string */
+        if (size == 0)
+            System.out.println("");
+ 
+        if (size == 1)
+             System.out.println(a[0]);
+ 
+        /* sort the array of strings */
+        Arrays.sort(a);
+ 
+        /* find the minimum length from first and last string */
+        int end = Math.min(a[0].length(), a[size-1].length());
+ 
+        /* find the common prefix between the first and
+           last string */
+        int i = 0;
+        while (i < end && a[0].charAt(i) == a[size-1].charAt(i) )
+            i++;
+ 
+        String pre = a[0].substring(0, i);
+        System.out.println(pre);
+        
+     
+    }
+}
