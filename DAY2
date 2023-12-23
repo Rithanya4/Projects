@@ -48,3 +48,28 @@ class HelloWorld {
         }
     }
 }
+3.String expansion:
+
+class HelloWorld {
+    public static void main(String[] args) {
+       
+int digit=0;
+       String str="a2b9c3v5",newstr="";
+       char newchar='a';
+    for(int i=0;i<str.length();i++){
+    
+    if(Character.isDigit(str.charAt(i))==false){
+       newchar=str.charAt(i);
+    }
+    else {
+        if(Character.isDigit(str.charAt(i))){
+        digit=Character.getNumericValue(str.charAt(i));
+         for(int j=0;j<digit;j++){
+             newstr+=newchar;
+         }
+        }
+    }
+}
+System.out.println(newstr);
+    }
+}
