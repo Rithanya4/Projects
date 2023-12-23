@@ -61,3 +61,23 @@ class HelloWorld {
      
     }
 }
+
+3.Telephone number combination:
+
+import java.util.Arrays;
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        String[] arr= { "0",   "1",   "abc",  "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+       String ques="23";
+       int quesind=0,j=0;
+       for(int i=0;i<ques.length();i++){
+           for(j=0;j<arr.length;j++){
+          quesind= ques.charAt(i);
+          if(Character.getNumericValue(quesind)==j){
+              System.out.println(arr[j]);
+          }
+       }
+       }
+    }
+}
